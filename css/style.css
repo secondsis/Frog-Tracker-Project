@@ -10,12 +10,36 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background: #17d81d;
-    padding: 15px 20px;
+    /* background: #17d81d; */
+    /* padding: 15px 20px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 4px solid #11a216;
+
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+nav a {
+  flex: 1;
+  background: #17d81d;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 16px;
+  border-bottom: 4px solid #11a216;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+nav a:hover {
+  transform: translateY(-3px);
+  background: #14b619;
+}
+
+/* ew get rid of that blue underline */
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight:bold;
 }
 
 /* Applies to all <h1>...</h1> elements. */
@@ -24,12 +48,26 @@ h1 {
   font-size: 35px;
   color: #fcfdf9;
   margin-top: 5px;
+  border-radius: 16px;
+  text-align: center;
+  padding: 15px 20px;
 }
 
 footer {
   background: #17d81d;
   color: #fcfdf9;
-  margin-top: 5px;
+  padding: 1px 2px;
+  margin-top: 40px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.2s ease
+}
+
+footer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
 /* Applies to all elements with <... class="someclass"> specified. */
@@ -38,14 +76,30 @@ footer {
   width: 25px;
 }
 
+.main {
+  background: #84e787;
+  border-radius: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+
 .pixel {
   image-rendering: pixelated;
 }
+
+/* .nav-card {
+    background-color: #27e62d;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: 0.2s ease
+} */
 
 .page-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  text-align: center;
 }
 
 .page-card {
