@@ -1,3 +1,1 @@
-function test(){
-    console.log("Test!")
-}
+// Not needed lol
