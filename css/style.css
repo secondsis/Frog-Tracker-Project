@@ -2,14 +2,27 @@
 selectors). */
 body {
   margin: 25px;
-  background-color: rgb(240,240,240);
-  font-family: arial, sans-serif;
+  background-color: rgb(168, 238, 196);
+  font-family: "Inter", sans-serif;
   font-size: 14px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #17d81d;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 4px solid #11a216;
 }
 
 /* Applies to all <h1>...</h1> elements. */
 h1 {
+  background: #17d81d;
   font-size: 35px;
+  color: #fcfdf9;
   font-weight: normal;
   margin-top: 5px;
 }
