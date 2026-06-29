@@ -3,7 +3,7 @@ selectors). */
 body {
   margin: 25px;
   background-color: rgb(168, 238, 196);
-  font-family: "Inter", sans-serif;
+  font-family: "Cause", sans-serif;
   font-size: 14px;
 }
 
@@ -27,8 +27,32 @@ h1 {
   margin-top: 5px;
 }
 
+footer {
+  background: #17d81d;
+  color: #fcfdf9;
+  margin-top: 5px;
+}
+
 /* Applies to all elements with <... class="someclass"> specified. */
-.someclass { color: red; }
+.tab {
+  display: inline-block;
+  width: 25px;
+}
+
+.pixel {
+  image-rendering: pixelated;
+}
+
+.page-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.page-card {
+    background-color: white;
+    
+}
 
 /* Applies to the element with <... id="someid"> specified. */
 #someid { color: green; }
