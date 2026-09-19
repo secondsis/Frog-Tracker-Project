@@ -128,5 +128,13 @@ footer:hover {
   border-radius: 12px;
 }
 
+.bubbly {
+  border-radius: 12px;
+}
+
+.tank-stats img {
+  border-radius: 12px;
+}
+
 /* Applies to the element with <... id="someid"> specified. */
 #someid { color: green; }
