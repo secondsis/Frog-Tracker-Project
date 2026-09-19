@@ -114,5 +114,19 @@ footer:hover {
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
+.frog-camera {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.frog-camera iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 12px;
+}
+
 /* Applies to the element with <... id="someid"> specified. */
 #someid { color: green; }
